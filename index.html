@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="title">Bookshelf Apps</h1>
+                <h1 class="co-title">Rino Indra.</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2 class="card-title">Welcome To My Bookshelf Apps</h2>
+            <form id="inputBuku">
+                <div class="input">
+                    <label for="inputJudul">Book Title</label>
+                    <input id="inputJudul" type="text" required class="input-box" placeholder="type here...">
+                </div>
+                <div class="input">
+                    <label for="inputPenulis">Author</label>
+                    <input id="inputPenulis" type="text" required class="input-box" placeholder="type here...">
+                </div>
+                <div class="input">
+                    <label for="inputTahun">Year Of Publication</label>
+                    <input id="inputTahun" type="number" required class="input-box" placeholder="type here...">
+                </div>
+                <div class="input">
+                    <label for="inputTarget">Target Finished Reading</label>
+                    <input id="inputTarget" type="date" required class="input-box" placeholder="type here...">
+                </div>
+                <div class="input_inline">
+                    <label for="inputBukuSelesai" id="inputBukuSelesaiLabel">Finished Reading</label>
+                    <input id="inputBukuSelesai" type="checkbox">
+                </div>
+                <button id="submit-buku">Put The Book On The Shelf <span id="tipeBuku"><strong>Unread</strong></span></button>
+                <button id="editBuku">Add Edit Book To Shelf <span id="editTipeBuku"><strong>Unread</strong></strong></span></button>
+            </form>
+        </section>
+        
+        <section class="book_shelf">
+            <h2 class="card-title">Unread Book</h2>
+            <div id="listBelum" class="listBuku">
+            </div>
+        </section>
+
+        <section class="book_shelf">
+            <h2 class="card-title">Finished Reading</h2>
+            <div id="listSudah" class="listBuku">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h4>&copy; 2022, Rino Indra Creative</h4>
+        </div>
+    </footer>
+
+    <script src="Js/main.js"></script>
+    <script src="Js/dom.js"></script>
+    <script src="Js/storage.js"></script>
+    
+</body>
+</html>

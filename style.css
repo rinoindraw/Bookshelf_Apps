@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@400;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Petrona', serif;
+    background-image: url(Cover/Marvel_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.navbar{
+    font-family: 'The Nautigal', cursive;
+    font-size: 2em;
+    background-color: #990000;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbar .container h1{
+    color: white;
+}
+
+.navbar .container .co-title{
+    margin-left: auto;
+    font-size: 2em;
+}
+
+main {
+    max-width: 600px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 16px;
+}
+
+.card-title{
+    font-family: 'The Nautigal', cursive;
+    font-size: 3em;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #DA1212;
+    -webkit-box-shadow:1px 10px 10px #990000;
+    -moz-box-shadow:1px 10px 10px #990000;
+    box-shadow:1px 10px 10px #990000;
+}
+
+.input-section h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input-section form .input {
+    margin: 8px 0;
+}
+
+.input-section form button {
+    /* background-color: red; */
+    /* color: blue; */
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.input-section form #editBuku,
+.input-section form #submit-buku {
+    background: #3330E4;
+    color: #ffff;
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    /* border-radius: 30px; */
+    cursor: pointer;
+    margin: auto;
+}
+
+.input-section>form>#editBuku:active,
+.input-section>form>#submit-buku:active {
+    background: white;
+    color: #3330E4;
+    /* transition: all 0.5s ease; */
+}
+
+.input-section>form>#editBuku {
+    display: none;
+}
+
+.input-section>form>.input>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 65px;
+    margin: 10px 0;
+}
+
+.input-section>form>.input>label {
+    color: white;
+    font-weight: bold;
+}
+
+.input-section>form>.input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-section>form>.input_inline>label {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.book_shelf {
+    margin: 35px 0 0 0;
+    padding: 24px;
+    background: #DA1212;
+    -webkit-box-shadow:1px 10px 10px #990000;
+    -moz-box-shadow:1px 10px 10px #990000;
+    box-shadow:1px 10px 10px #990000;
+}
+
+.book_shelf>h2 {
+    color: white;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.book_shelf>.listBuku>.book_item {
+    padding: 16px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_shelf>.listBuku>.book_item>.info>h3,
+p {
+    margin: 8px 0;
+}
+
+.book_shelf>.listBuku>.book_item>.action {
+    display: flex;
+    align-items: center;
+}
+
+.book_shelf>.listBuku>.book_item>.action>button {
+    border: 0;
+    padding: 5px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checklist {
+    background: url('Img/checked.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.checklist:hover {
+    background: url('Img/checked.gif');
+    background-size: contain;
+}
+
+.edit {
+    background: url('Img/edit.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.edit:hover {
+    background: url('Img/edit.gif');
+    background-size: contain;
+    width: 20px;
+}
+
+.trash {
+    background: url('Img/trash.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash:hover {
+    background: url('Img/trash.gif');
+    background-size: contain;
+}
+
+.undo {
+    background: url('Img/restart.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo:hover {
+    background: url('Img/restart.gif');
+    background-size: contain;
+}
+
+.checklist:focus,
+.trash {
+    outline: none;
+}
+
+footer .container{
+    font-family: 'The Nautigal', cursive;
+    font-size: 2em;
+}
+
+footer>.container>h4{
+    color: white;
+}   
+
+.input-box[type=text], .input-box[type=date], .input-box[type=number]{
+	margin: 10px;
+	font-size: 13pt;
+	padding: 10px;	
+	background: transparent;
+	color: #fff;
+	font-family: 'Petrona', serif;
+	border: 1px solid white;
+    box-sizing: border-box;
+}
+ 
+.input-box:focus{
+	outline: none;
+}
+ 
+.input-box::-webkit-input-placeholder{
+	color: white;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        width: auto;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .navbar{
+        font-size: 1.5em;
+    }
+    .card-title{
+        font-size: 2em;
+    }
+    footer .container{
+        font-family: 'The Nautigal', cursive;
+        font-size: 1.5em;
+    }
+}
